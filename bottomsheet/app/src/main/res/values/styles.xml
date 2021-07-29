@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BottomSheetStyle" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateHidden</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ButtonBottomFillRounded" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/selector_text_bottom_sheet</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="elevation">0dp</item>
+        <item name="backgroundTint">@drawable/selector_btn_bottom_sheet</item>
+        <item name="rippleColor">@null</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+
+    <style name="BottomSheetDialogRounded" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetRounded</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <!--        <item name="behavior_draggable">false</item>-->
+    </style>
+
+    <style name="BottomSheetDialogRounded.Transparent" parent="BottomSheetDialogRounded">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+    <style name="BottomSheetRounded" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceBottomSheetDialogRounded</item>
+    </style>
+
+    <style name="ShapeAppearanceBottomSheetDialogRounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">12dp</item>
+        <item name="cornerSizeTopLeft">12dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+
+</resources>
